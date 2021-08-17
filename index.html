@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Indonesia</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Text Css -->
+
+<style type="text/css">
+	:root {
+	--black: black;
+	--grey: grey;
+	--white: white;
+	--smoke: whitesmoke;
+	--red: red;
+	--slate: darkslategrey;
+	--bgatas: #202020;
+	--fb: darkblue;
+	--blue: blue;
+	--darkred: darkred;
+	--bg: url(img/kita.jpg);
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: var(--white);
+	font-family: sans-serif;
+	text-transform: capitalize;
+	justify-content: center;
+	background-image: var(--bg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+
+header {
+    background:var(--bgatas);
+    margin-top: -15px;
+    height: 10%;
+    box-shadow:0 .5rem 1rem rgba(0, 0, 0,.4);
+    display: fixed;
+    align-items: center;
+    justify-content: center;
+    border-bottom: .2rem solid var(--white);
+    border-bottom-right-radius: 28px;
+    border-bottom-left-radius: 28px;
+}
+
+
+h2 {
+	height: 4rem;
+    line-height: 5rem;
+	text-align: center;
+	color:var(--white);
+	margin-top: 15px;
+	font-size: 19px;
+    font-weight: bolder;
+    padding: 0;
+}
+
+span {
+	color:var(--red);
+}
+
+.profile {
+	max-width: 400px;
+	max-height: 600px;
+	align-items: center;
+	height: 450px;
+	background: rgba(0, 0, 0, 1.0);
+	opacity: 0.7;
+	margin: 20px auto;
+	border-radius: 25px;
+  box-shadow:0rem 0rem rgba(0, 0, 0,.10);
+  border-top: .3rem solid var(--white);
+  justify-content: center;
+  display: blcok;
+}
+
+.profile:hover {
+	background: var(--black);
+}
+
+.profile img {
+	width: 110px;
+	height: 110px;
+	margin-top: 25px;
+	margin-left: 35%;
+	border-radius: 50%;
+	transition: 1.5s;
+}
+
+.profile img:hover {
+	border-bottom: .2rem solid var(--white);
+	transition: 1.5s;
+}
+
+.profile h3 {
+	margin-top: 8px;
+	justify-content: center;
+	color: var(--white);
+	margin-left: 30%;
+	font-weight: bold;
+	font-size: 25px;
+	letter-spacing: 1px;
+}
+
+.profile h1 {
+	margin-top: -22px;
+	text-align: center;
+	color: var(--white);
+	font-size: 11px;
+	font-family:monospace;
+	letter-spacing: 2px;
+}
+
+.ketik {
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.ketik > * {
+	margin-top: 120px;
+	text-align: center;
+	color: yellow;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: monospace;
+	justify-content: center;
+	position: block;
+	display: inline-block;
+	overflow: hidden;
+	white-space: nowrap;
+	animation: typingAnim 3s steps(27);
+}
+.icon {
+	padding-top: 140px;
+	margin-left: 15%;
+}
+
+.profile .icon i {
+	padding: 7px;
+	margin: 3px;
+	background: var(--smoke);
+	text-align: center;
+	border-radius: 5px;
+	font-size: 10px;
+	color: var(--black);
+	transition: 1s;
+}
+
+.profile i:hover {
+	background: var(--fb);
+	color: var(--white);
+	border-bottom: .2rem solid var(--blue);
+}
+
+.profile .icon .youtube:hover {
+	background: var(--red);
+	color: var(--white);
+	border-bottom: .2rem solid var(--darkred);
+}
+
+.profile .icon .instagram:hover {
+	background: grey;
+	color: var(--white);
+	border-bottom: .2rem solid var(--slate);
+}
+
+.profile .icon a {
+	text-decoration: none;
+	color: var(--black);
+}
+
+.profile .icon a:hover {
+	color: var(--white);
+	transition: 1s;
+}
+
+.copyright {
+	color: white;
+	margin-top: 5px;
+	margin-left: 18%;
+	font-size: 10px;
+	font-family: monospace;
+	letter-spacing: 2px;
+}
+
+@keyframes typingAnim {
+	from {width: 0;}
+	to {width: 100%;}
+}
+
+.music {
+	margin-top: -170px;
+}
+
+.wrapper{
+    position: relative;
+}
+
+.buttons{
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.buttons button{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    padding: 16px;
+    border-radius: 90px;
+    /background-color: #E1E6EC;/
+    text-align: left;
+    margin: 10px 9px;
+    border: none;
+    /background:linear-gradient(-45deg,#a2b1c6,#fff);/
+}
+.buttons button:active{
+    background: #E1E6EC;
+    box-shadow: inset 2px 2px 5px #A2B1C6 , -2px -2px 11px  #fff  ;
+}
+.buttons button img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 42%;
+    height: 42%;
+}
+
+.level{
+    width: 350px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: var(--grey);
+    border-radius: 50px;
+}
+.level::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background-color: var(--slate);
+    width: 15px; /* Set a specific slider handle width */
+    height: 10px; /* Slider handle height */
+    border-radius: 90px;
+}
+.level::-moz-range-thumb{
+    width: 50px;
+    height: 50px;
+}
+
+</style>
+
+<!-- Text Html -->
+
+</head>
+<body>
+	<header>
+		<h2>Selamat 11 Bulan <span>Sayang</span></h2>
+	</header>
+	<br>
+			<div class="ketik">
+		<p>Halo sayang,Gimana Kabarnya? Sehat Sehat Terus Ya ❤️<br>Jangan Telat Makan! Semangat Terus Kerjanya ❤️<br>Jangan Sampe Sakit Ya ❤️<br>Makasih udah mau bertahan sama aku ❤️<br>Semoga Kita Tetep Sama Sama ya ❤️</p></div><br>
+	<div class="profile">
+		<img src="img/kitaa.jpg">
+		<h3>Dear Kamu</h3>
+		<h1><span>28-09-2020</span></h1>
+		<br>
+		<div class="icon">
+			<i class="fa fa-facebook"><a href="https://facebook.com/AndySyahputra746"> | Facebook</i></a>
+			<i class="fa fa-youtube youtube"><a href="https://www.youtube.com/c/ArsyChannel"> | YouTube</i></a>
+			<i class="fa fa-instagram instagram"><a href="https://instagram.com/hanyauntukygberkepentingan_"> | Instagram</i></a>
+			<div class="copyright">
+				<h4>#AndySyahputra</h4>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+	<div class="music">
+        <div class="wrapper">
+            <input id="range" class="level" type="range" value="0" min="0">
+            <div class="buttons">
+                <button id="pre"><img src="img/rewind.png"></button>
+                <button id="play"><img id="play_img" src="img/play.png"></button>
+                <button id="next"><img src="img/fast-forward.png"></button>
+            </div>  
+         </div>    
+    </div>
+
+<!-- Text Javascript -->
+
+<script type="text/javascript">
+	music_name = "Krisdayanti feat Melly Goeslaw - Cinta (COVER) by Della Firdatia.mp3"
+let play_btn = document.querySelector("#play");
+let prev_btn = document.querySelector("#pre");
+let next_btn = document.querySelector("#next");
+let range = document.querySelector("#range");
+let play_img = document.querySelector("#play_img")
+let total_time = 0;
+let currentTime = 0;
+let isPlaying = false;
+let song = new Audio();
+window.onload = playSong;
+
+function playSong(){
+    song.src = music_name;
+    console.log(song)
+    
+    
+    play_btn.addEventListener('click',function(){
+        if(!isPlaying){
+            song.play();
+            isPlaying = true;
+            total_time = song.duration;
+            range.max = total_time;
+            play_img.src = "img/pause.png";
+        }else{
+            song.pause();
+            isPlaying = false;
+            play_img.src = "img/play.png";
+        }
+       song.addEventListener('ended',function(){
+            song.currentTime = 0
+            song.pause();
+            isPlaying = false;
+            range.value = 0;
+            play_img.src = "img/play.png";
+        })
+        song.addEventListener('timeupdate',function(){
+            range.value = song.currentTime;
+        })
+        range.addEventListener('change',function(){
+            song.currentTime = range.value;
+        })
+       
+    })
+}
+</script>
+</body>
+</html>
